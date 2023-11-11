@@ -16,3 +16,13 @@ col1,col2,col3 = st.columns(3) #가로줄을 세개로 나눔
 col1.metric(label="달러USB",value="1,228 원",delta="-32.00 원") #같은곳에 매트릭을 쓰면 그아래에 만들어짐.단 같은 내용일 경우 이미있는 위치에 써짐.
 col2.metric(label="일본JPY(100엔)",value="958.63 원",delta="-7.44 원")
 col3.metric(label="유럽연합EUR",value="1,335.82 원",delta="11.44 원")
+
+tab1,tab2 = st.tabs(["Cat" , "Dog"])
+with tab1:
+  st.header("A cat")
+  st.image("https://static.steamlit.io/examples/cat.jpg",width=200)
+
+
+with tab2:
+  st.header("A dog")
+  st.image("https://static.steamlit.io/examples/dog.jpg",width=200)
