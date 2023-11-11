@@ -9,7 +9,7 @@ st.table(dataframe) #그냥 출력.
 
 
 st.write("Hello **world**!")
-st.metric(label="온도",value="10℃",delta="0") #label은 위에 글씨 , value = 중심에 글자,delta = 아래에 숫자(양수,음수는 서로 화살표 방향이 다름.)
+st.metric(label="온도",value="10℃",delta="1.2℃") #label은 위에 글씨 , value = 중심에 글자,delta = 아래에 숫자(양수,음수는 서로 화살표 방향이 다름.)
 st.metric(label="삼성전자",value="61,000 원",delta="-1200 원")
 
 col1,col2,col3 = st.columns(3) #가로줄을 세개로 나눔
