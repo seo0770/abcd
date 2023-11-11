@@ -6,6 +6,15 @@ dataframe = pd.DataFrame({"first column": [1,2,3,4],"second column": [10,20,30,4
 st.dataframe(dataframe,use_container_width=False) #아래와 다르게 기능 존재 , 인수use...는 크기를 가로에 맞춤?
 st.table(dataframe) #그냥 출력.
 
+tab1,tab2 = st.tabs(["Cat" , "Dog"])
+with tab1:
+  st.header("A cat")
+  st.image("https://static.steamlit.io/examples/cat.jpg",width=200)
+
+
+with tab2:
+  st.header("A dog")
+  st.image("https://static.steamlit.io/examples/dog.jpg",width=200)
 
 
 st.write("Hello **world**!")
@@ -17,12 +26,3 @@ col1.metric(label="달러USB",value="1,228 원",delta="-32.00 원") #같은곳�
 col2.metric(label="일본JPY(100엔)",value="958.63 원",delta="-7.44 원")
 col3.metric(label="유럽연합EUR",value="1,335.82 원",delta="11.44 원")
 
-tab1,tab2 = st.tabs(["Cat" , "Dog"])
-with tab1:
-  st.header("A cat")
-  st.image("https://static.steamlit.io/examples/cat.jpg",width=200)
-
-
-with tab2:
-  st.header("A dog")
-  st.image("https://static.steamlit.io/examples/dog.jpg",width=200)
